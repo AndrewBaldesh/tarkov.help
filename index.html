@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarkov.Help</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="even-columns">
+            <div class="left-col flow">
+              <div class="title | bg-neutral-600">
+                <p class="text-accent-500 fw-medium">
+                  Одиночные квалификации на турнир
+                </p>
+              </div>
+              <h1 class="text-primary fs-primary-heading fw-primary-heading">
+                Турнир Tarkov.Help
+              </h1>
+              <h2 class="text-neutral-450 fs-subtitle fw-semibold">
+                Охота на новичков Одиночки
+              </h2>
+              <button class="register-button | primary-button">
+                Записаться на турнир
+              </button>
+            </div>
+            <div class="right-col">
+              <img
+                class="top-img"
+                src="/images/top_image.svg"
+                alt="pmc image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <dialog class="modal flow" id="modal">
+        <div class="modal-wrapper">
+          <h2 class="text-primary fs-subtitle fw-semibold">
+            Подача заявки на турнир Tarkov.Help
+          </h2>
+          <p class="fs-heading">
+            Для подачи заявки на участие, пожалуйста, за заполните форму ниже
+          </p>
+          <form class="form">
+            <label>Ваше имя </label> <input type="text" />
+            <label>Ваш Email </label> <input type="email" />
+            <label>Ссылка на ваш Twitch канал </label> <input type="text" />
+            <button class="close-button | primary-button" type="button">
+              Зарегистрироваться
+            </button>
+          </form>
+        </div>
+      </dialog>
+      <section>
+        <div class="container">
+          <div class="even-columns">
+            <div class="flow">
+              <h2 class="text-primary fs-secondary-heading fw-semibold mt-10">
+                Правила проведения турнира
+              </h2>
+              <h3 class="text-accent-400 fs-heading fw-semibold">
+                Цель участников турнира:
+              </h3>
+              <p class="text-neutral-450">
+                Игроки за 3 часа игры на локации Таможня, должны как можно
+                больше раз выжить в рейдах и уничтожить как можно больше игроков
+                на карте за один рейд. Турнир основан на PVP механике и удаче в
+                нахождении игроков низкого уровня персонажа.
+              </p>
+              <h3 class="text-accent-400 fs-heading fw-semibold">
+                Снаряжение:
+              </h3>
+              <p class="text-neutral-450">
+                Любое снаряжение на любую сумму денег с основного аккаунта
+                игрока.
+              </p>
+              <h3 class="text-accent-400 fs-heading fw-semibold">
+                Получение очков:
+              </h3>
+              <p class="text-neutral-450">
+                Убийства ЧВК с жетоном за один рейд:
+              </p>
+              <ul role="list" class="fw-semibold">
+                <li class="">
+                  <p class="text-primary">
+                    1 убийство с жетоном
+                    <span class="text-neutral-100">-</span>
+                    <span class="text-accent-500">1 очко</span>
+                  </p>
+                </li>
+                <li class="">
+                  <p class="text-primary">
+                    2 убийства с жетоном
+                    <span class="text-neutral-100">-</span>
+                    <span class="text-accent-500">4 очка</span>
+                  </p>
+                </li>
+                <li class="">
+                  <p class="text-primary flex">
+                    3 убийства с жетоном
+                    <span class="text-neutral-100">-</span>
+                    <span class="text-accent-500">8 очков</span>
+                  </p>
+                </li>
+
+                <li class="">
+                  <p class="text-primary">
+                    4 убийства с жетоном
+                    <span class="text-neutral-100">-</span>
+                    <span class="text-accent-500">16 очков</span>
+                  </p>
+                </li>
+                <li class="">
+                  <p class="text-primary">
+                    5+ убийств с жетоном
+                    <span class="text-neutral-100">-</span>
+                    <span class="text-accent-500"
+                      >за каждого ЧВК по 5 очков</span
+                    >
+                  </p>
+                </li>
+                <li class="">
+                  <p class="text-primary">
+                    Extra: убийтсво оружием ближнего боя
+                    <span class="text-neutral-100">-</span>
+                    <span class="text-accent-500">20 очков</span>
+                  </p>
+                </li>
+              </ul>
+              <p class="text-neutral-500">
+                *(Если уровень убитого ЧВК не превышает или равен 20, то
+                дополнительно дается 4 очка за каждого)
+              </p>
+              <p class="text-neutral-500">
+                *(Учитываются очки только в рейдах, где участник выжил в рейде,
+                обязательно нужно собирать жетоны, иначе очки за убийство не
+                будут засчитаны)
+              </p>
+              <div class="flow">
+                <h3 class="text-accent-400 fs-heading fw-semibold">
+                  Правила подачи заявки:
+                </h3>
+                <p class="text-neutral-400">Заявка должна включать в себя:</p>
+                <ul role="list" class="text-neutral-400">
+                  <li class="points">
+                    <p>
+                      - двухчасовой стрим на платформе Twitch с названием:
+                      <span class="text-primary fw-bold"
+                        >Tarkov Help заявка</span
+                      >
+                    </p>
+                  </li>
+                  <li>- ссылка на запись двухчасового стрима</li>
+                  <li>
+                    - с самого начала стрима нужно показать статистику вашего
+                    персонажа по убийствам чвк, после уже начинать рейды на
+                    локации Таможня
+                  </li>
+                  <li>
+                    - всегда показывать список убийств в конце рейда, не
+                    скрывать экран чем-либо
+                  </li>
+                  <li>
+                    - по окончанию двух часов показать статистику персонажа по
+                    убийством чвк
+                  </li>
+                  <li>- количество участников в турнире: 10 человек</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-accent-400 fs-heading fw-semibold">
+                  Минимальные требования к участнику:
+                </h3>
+                <ul role="list" class="text-neutral-400">
+                  <li>
+                    <p>- аккаунт на твиче, не важно партнер или нет</p>
+                  </li>
+                  <li>
+                    <p>- 18 лет или более</p>
+                  </li>
+                  <li>
+                    <p>- качество стрима для заявки 720p и выше</p>
+                  </li>
+                  <li>
+                    <p>- умение говорить хорошо на русском языке</p>
+                  </li>
+                  <li>
+                    <p>- не нарушать правила платформы Twitch</p>
+                  </li>
+                  <li>
+                    <p>- жить в регионах России</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right-col flow" style="--flow-spacer: 1.5em">
+              <div class="side-card | bg-neutral-600 fs-side-card">
+                <p class="text-neutral-100 fw-bold">Время проведения турнира</p>
+                <p class="text-accent-400 fw-medium">
+                  Прием заявок 12-20 апреля
+                </p>
+                <p class="text-accent-400 fw-medium">
+                  Проведение турнира 23 апреля
+                </p>
+              </div>
+              <div class="customs | grid">
+                <img
+                  class="customs-img"
+                  src="/images/customs.svg"
+                  alt="customs"
+                />
+                <div>
+                  <h3 class="text-accent-400 fw-semibold fs-heading">
+                    Локация:
+                  </h3>
+                  <p class="text-neutral-100">Таможня</p>
+                </div>
+              </div>
+              <div class="wrapper ml-auto">
+                <button class="register-button | secondary-button">
+                  Записаться на турнир
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="flow text-center">
+            <h3 class="text-accent-400 fs-heading fw-semibold text-center">
+              Награда победителям
+            </h3>
+            <div class="prizes">
+              <div class="prize-card | bg-neutral-600">
+                <h4 class="text-primary fs-card-title fw-semibold">1 место</h4>
+                <p class="text-accent-500 fs-heading">25 000 ₽</p>
+              </div>
+              <div class="prize-card | bg-neutral-600">
+                <h4 class="text-primary fs-card-title fw-semibold">2 место</h4>
+                <p class="text-accent-500 fs-heading">14 000 ₽</p>
+              </div>
+              <div class="prize-card | bg-neutral-600">
+                <h4 class="text-primary fs-card-title fw-semibold">3 место</h4>
+                <p class="text-accent-500 fs-heading">8 000 ₽</p>
+              </div>
+              <div class="prize-card | bg-neutral-600">
+                <h4 class="text-primary fs-card-title fw-semibold">4 место</h4>
+                <p class="text-accent-500 fs-heading">3 000 ₽</p>
+              </div>
+            </div>
+
+            <div class="add-prizes | bg-neutral-600">
+              <p class="text-accent-400 fs-card-title">
+                <label for="toggle" class="toggle-label">
+                  <span> +</span>
+                </label>
+                дополнительные секретные призы победителям
+              </p>
+            </div>
+            <input type="checkbox" class="toggle" id="toggle" />
+            <div class="added-prizes | bg-neutral-600 flow">
+              <p class="text-accent-400 fs-card-title">Очки Johan B</p>
+              <p class="text-accent-400 fs-card-title">Очки Johan B</p>
+              <p class="text-accent-400 fs-card-title">Очки Johan B</p>
+              <p class="text-accent-400 fs-card-title">Очки Johan B</p>
+              <p class="text-accent-400 fs-card-title">Очки Johan B</p>
+            </div>
+          </div>
+          <div class="flow">
+            <h3 class="text-accent-400 fs-heading fw-semibold">
+              Спонсоры турнира
+            </h3>
+            <div class="sponsors | bg-neutral-600">
+              <img src="/pepich.svg" alt="" />
+              <p class="text-primary fs-card-title">pep1ch</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
