@@ -218,7 +218,7 @@
               <div class="customs | grid">
                 <img
                   class="customs-img"
-                  src="/images/customs.png"
+                  src="images/customs.png"
                   alt="customs"
                 />
                 <div>
@@ -284,13 +284,44 @@
               Спонсоры турнира
             </h3>
             <div class="sponsors | bg-neutral-600">
-              <img src="/images/pepich.png" alt="" />
+              <img src="images/pepich.png" alt="" />
               <p class="text-primary fs-card-title">pep1ch</p>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <script type="module" src="main.js"></script>
+    <script>
+    const modal = document.querySelector('#modal');
+const openModal = document.querySelector('.register-button');
+const openModal2 = document.querySelector('.secondary-button');
+const closeModal = document.querySelector('.close-button');
+
+openModal.addEventListener('click', () => {
+  modal.showModal();
+});
+openModal2.addEventListener('click', () => {
+  modal.showModal();
+});
+
+modal.addEventListener('click', (e) => {
+  if (e.target.nodeName === 'DIALOG') {
+    modal.close();
+  }
+});
+
+closeModal.addEventListener('click', () => {
+  modal.setAttribute('closing', '');
+
+  modal.addEventListener(
+    'animationend',
+    () => {
+      modal.removeAttribute('closing');
+      modal.close();
+    },
+    { once: true }
+  );
+});
+    </script>
   </body>
 </html>
